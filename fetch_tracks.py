@@ -29,10 +29,15 @@ def get_recent_tracks(access_token):
         album_name = track['album']['name']
         album_art_url = track['album']['images'][0]['url']  # Typically, the first image is the largest
         
+
+        
         track_info = {
             'name': track['name'],
             'artists': artists,
             'album': album_name,
             'album_art': album_art_url
         }
+
+
+    
     print(track_info)
