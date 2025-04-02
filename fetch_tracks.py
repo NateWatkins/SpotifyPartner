@@ -1,9 +1,8 @@
 import requests
 from auth import refresh_access_token
 
-
 def get_recent_tracks(access_token):
-    url = 'https://api.spotify.com/v1/me/player/recently-played?limit=1'
+    url = 'https://api.spotify.com/v1/me/player/recently-played?limit=10'
     headers = {'Authorization': f'Bearer {access_token}'}
 
     response = requests.get(url, headers=headers)
@@ -31,13 +30,13 @@ def get_recent_tracks(access_token):
         
 
         
-        track_info = {
+        track_info.append({
             'name': track['name'],
             'artists': artists,
             'album': album_name,
             'album_art': album_art_url
-        }
+        })
 
 
     
-    print(track_info)
+    return(track_info)
