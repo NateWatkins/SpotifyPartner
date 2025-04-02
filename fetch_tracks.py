@@ -1,9 +1,11 @@
 import requests
 from auth import refresh_access_token
+from datetime import datetime
 
 def get_recent_tracks(access_token):
     url = 'https://api.spotify.com/v1/me/player/recently-played?limit=10'
     headers = {'Authorization': f'Bearer {access_token}'}
+
 
     response = requests.get(url, headers=headers)
 
@@ -34,9 +36,10 @@ def get_recent_tracks(access_token):
             'name': track['name'],
             'artists': artists,
             'album': album_name,
-            'album_art': album_art_url
+            'album_art': album_art_url,
+            "played_at": datetime.utcnow().isoformat()
         })
 
 
-    
+
     return(track_info)
