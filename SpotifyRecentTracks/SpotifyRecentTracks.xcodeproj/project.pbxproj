@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C5B6EC22D692BDD0058A2F4 /* SpotifyRecentTracksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5B6EC12D692BDD0058A2F4 /* SpotifyRecentTracksApp.swift */; };
-		6C5B6EC42D692BDD0058A2F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5B6EC32D692BDD0058A2F4 /* ContentView.swift */; };
+		6C4B41502DA4960200EFAF2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4B414F2DA4960200EFAF2B /* ContentView.swift */; };
+		6C4B41532DA4969300EFAF2B /* SpotifyHistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4B41522DA4969300EFAF2B /* SpotifyHistoryService.swift */; };
+		6C4B41562DA4975F00EFAF2B /* SpotifyTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4B41552DA4975F00EFAF2B /* SpotifyTrack.swift */; };
+		6C4B41592DA4998800EFAF2B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6C4B41582DA4998800EFAF2B /* FirebaseAnalytics */; };
+		6C4B415B2DA4998800EFAF2B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6C4B415A2DA4998800EFAF2B /* FirebaseDatabase */; };
+		6C4B415D2DA499FE00EFAF2B /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 6C4B415C2DA499FE00EFAF2B /* FirebaseAnalyticsOnDeviceConversion */; };
+		6C4B415F2DA499FE00EFAF2B /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 6C4B415E2DA499FE00EFAF2B /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		6C4B41612DA49D2F00EFAF2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C4B41602DA49D2E00EFAF2B /* GoogleService-Info.plist */; };
+		6C5B6EC22D692BDD0058A2F4 /* SpotifyHistoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5B6EC12D692BDD0058A2F4 /* SpotifyHistoryApp.swift */; };
 		6C5B6EC62D692BDF0058A2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C5B6EC52D692BDF0058A2F4 /* Assets.xcassets */; };
 		6C5B6ECA2D692BDF0058A2F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C5B6EC92D692BDF0058A2F4 /* Preview Assets.xcassets */; };
 		6C5B6ED42D692BDF0058A2F4 /* SpotifyRecentTracksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5B6ED32D692BDF0058A2F4 /* SpotifyRecentTracksTests.swift */; };
@@ -34,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C4B414F2DA4960200EFAF2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6C4B41522DA4969300EFAF2B /* SpotifyHistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyHistoryService.swift; sourceTree = "<group>"; };
+		6C4B41552DA4975F00EFAF2B /* SpotifyTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyTrack.swift; sourceTree = "<group>"; };
+		6C4B41602DA49D2E00EFAF2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6C5B6EBE2D692BDD0058A2F4 /* SpotifyRecentTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyRecentTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C5B6EC12D692BDD0058A2F4 /* SpotifyRecentTracksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyRecentTracksApp.swift; sourceTree = "<group>"; };
-		6C5B6EC32D692BDD0058A2F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6C5B6EC12D692BDD0058A2F4 /* SpotifyHistoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyHistoryApp.swift; sourceTree = "<group>"; };
 		6C5B6EC52D692BDF0058A2F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C5B6EC72D692BDF0058A2F4 /* SpotifyRecentTracks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpotifyRecentTracks.entitlements; sourceTree = "<group>"; };
 		6C5B6EC92D692BDF0058A2F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C4B415B2DA4998800EFAF2B /* FirebaseDatabase in Frameworks */,
+				6C4B415D2DA499FE00EFAF2B /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				6C4B41592DA4998800EFAF2B /* FirebaseAnalytics in Frameworks */,
+				6C4B415F2DA499FE00EFAF2B /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C311CCA2DA4948600BF24F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C4B414F2DA4960200EFAF2B /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6C4B41512DA4965700EFAF2B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6C4B41522DA4969300EFAF2B /* SpotifyHistoryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6C4B41542DA496F700EFAF2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C4B41552DA4975F00EFAF2B /* SpotifyTrack.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6C5B6EB52D692BDD0058A2F4 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +133,11 @@
 		6C5B6EC02D692BDD0058A2F4 /* SpotifyRecentTracks */ = {
 			isa = PBXGroup;
 			children = (
-				6C5B6EC12D692BDD0058A2F4 /* SpotifyRecentTracksApp.swift */,
-				6C5B6EC32D692BDD0058A2F4 /* ContentView.swift */,
+				6C4B41602DA49D2E00EFAF2B /* GoogleService-Info.plist */,
+				6C4B41542DA496F700EFAF2B /* Model */,
+				6C4B41512DA4965700EFAF2B /* Services */,
+				6C311CCA2DA4948600BF24F5 /* Views */,
+				6C5B6EC12D692BDD0058A2F4 /* SpotifyHistoryApp.swift */,
 				6C5B6EC52D692BDF0058A2F4 /* Assets.xcassets */,
 				6C5B6EC72D692BDF0058A2F4 /* SpotifyRecentTracks.entitlements */,
 				6C5B6EC82D692BDF0058A2F4 /* Preview Content */,
@@ -145,6 +186,12 @@
 			dependencies = (
 			);
 			name = SpotifyRecentTracks;
+			packageProductDependencies = (
+				6C4B41582DA4998800EFAF2B /* FirebaseAnalytics */,
+				6C4B415A2DA4998800EFAF2B /* FirebaseDatabase */,
+				6C4B415C2DA499FE00EFAF2B /* FirebaseAnalyticsOnDeviceConversion */,
+				6C4B415E2DA499FE00EFAF2B /* FirebaseAnalyticsWithoutAdIdSupport */,
+			);
 			productName = SpotifyRecentTracks;
 			productReference = 6C5B6EBE2D692BDD0058A2F4 /* SpotifyRecentTracks.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +264,9 @@
 				Base,
 			);
 			mainGroup = 6C5B6EB52D692BDD0058A2F4;
+			packageReferences = (
+				6C4B41572DA4998700EFAF2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 6C5B6EBF2D692BDD0058A2F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +285,7 @@
 			files = (
 				6C5B6ECA2D692BDF0058A2F4 /* Preview Assets.xcassets in Resources */,
 				6C5B6EC62D692BDF0058A2F4 /* Assets.xcassets in Resources */,
+				6C4B41612DA49D2F00EFAF2B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C5B6EC42D692BDD0058A2F4 /* ContentView.swift in Sources */,
-				6C5B6EC22D692BDD0058A2F4 /* SpotifyRecentTracksApp.swift in Sources */,
+				6C4B41562DA4975F00EFAF2B /* SpotifyTrack.swift in Sources */,
+				6C4B41502DA4960200EFAF2B /* ContentView.swift in Sources */,
+				6C5B6EC22D692BDD0058A2F4 /* SpotifyHistoryApp.swift in Sources */,
+				6C4B41532DA4969300EFAF2B /* SpotifyHistoryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +670,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6C4B41572DA4998700EFAF2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6C4B41582DA4998800EFAF2B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C4B41572DA4998700EFAF2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6C4B415A2DA4998800EFAF2B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C4B41572DA4998700EFAF2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6C4B415C2DA499FE00EFAF2B /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C4B41572DA4998700EFAF2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		6C4B415E2DA499FE00EFAF2B /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6C4B41572DA4998700EFAF2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6C5B6EB62D692BDD0058A2F4 /* Project object */;
 }

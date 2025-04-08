@@ -13,5 +13,9 @@
 
 4/1
     - Finished Uploading the recentHistory to the DB
-    Progress
-    data 
+
+4/6
+    - Turned on my GitHub commit activity 
+
+4/7
+    -
