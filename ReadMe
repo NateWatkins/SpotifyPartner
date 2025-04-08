@@ -1,0 +1,23 @@
+First I want to create a Recent History list using the basic spotify command
+
+
+
+
+Goal: Create a multi-function Spotify-Oriented App that utilizes cloud services
+
+
+Functions and Means
+Recent History
+-  Pull the recent history using Spotify API function
+- For each song I've pulled the artist, name of song, album cover and art.    ->        I want to display this information on a page on the app
+
+
+
+
+
+
+
+Create Weather playlist
+
+Create Heartbeat Running Playlist
+

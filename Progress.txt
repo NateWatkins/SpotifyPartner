@@ -1,0 +1,21 @@
+2/28
+    - Created GitHub
+    - Finished getRecentHistory() 
+        -{name; artists; album; album_art}
+    
+3/30
+    -Started work on the Realtime DB 
+
+3/31 
+    -Continued on the RealTimeDB 
+    - RealTimeDb is in testMode wehre anyone can see the information
+
+
+4/1
+    - Finished Uploading the recentHistory to the DB
+
+4/6
+    - Turned on my GitHub commit activity 
+
+4/7
+    -
