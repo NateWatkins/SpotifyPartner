@@ -18,4 +18,6 @@
     - Turned on my GitHub commit activity 
 
 4/7
-    -
+    - Pulled information from the DB to the swift app
+        -In list form and with no using
+    - Connected  Swift and Firebase
