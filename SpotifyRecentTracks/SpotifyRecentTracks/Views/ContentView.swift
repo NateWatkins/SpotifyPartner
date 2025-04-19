@@ -28,10 +28,8 @@ struct ContentView: View {
             .padding(.vertical, 4)
         }
         .task {
-            SpotifyHistoryService().fetchRecentTracks { tracks in
-                print("🎯 [ContentView] Final fetched: \(tracks.count) tracks")
-                self.tracks = tracks
-            }
+            SpotifyPythonRunner.runPythonScript() // Run Python script
+            //viewModel.loadTracks()                // Load Firebase data
         }
         
     }
