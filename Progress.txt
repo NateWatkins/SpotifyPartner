@@ -21,3 +21,6 @@
     - Pulled information from the DB to the swift app
         -In list form and with no using
     - Connected  Swift and Firebase
+
+4/23
+- Nothing really
